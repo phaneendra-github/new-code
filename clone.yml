@@ -1,0 +1,8 @@
+pipeline:
+  agent: any
+  stages:
+    - stage: GitClone
+      steps:
+        - script:
+            - git clone "https://github.com/phaneendra-github/new-code"
+          displayName: 'Git Clone'
